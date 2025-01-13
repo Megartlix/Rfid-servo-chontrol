@@ -30,6 +30,23 @@ UID, kodda tanımlı geçerli kart UID'leri ile karşılaştırılır:
 Geçerli kart ise: Servo motor hareket eder.
 Geçersiz kart ise: Bir uyarı veya işlem yapılmaz.
 
+Bağlantı Şeması 🔌
+RFID Pinleri	Arduino Pinleri
+SDA	D10
+SCK	D13
+MOSI	D11
+MISO	D12
+IRQ	-
+GND	GND
+RST	D9
+3.3V	3.3V
+Servo Motor	Arduino Pinleri
+Sinyal	D3
+VCC	5V
+GND	GND
+
+RFID UID değerini öğrenmek istiyorsanız şu dosyaya göz atın: uiddeger.ino.
+
 
 English :
 
@@ -64,3 +81,22 @@ If the UID matches:
 The servo motor moves to the desired position.
 If the UID doesn’t match:
 No action is taken, or an alert is generated.
+
+
+
+Circuit Diagram 🔌
+RFID Pins	Arduino Pins
+SDA	D10
+SCK	D13
+MOSI	D11
+MISO	D12
+IRQ	-
+GND	GND
+RST	D9
+3.3V	3.3V
+
+Servo Motor	Arduino Pins
+Signal	D3
+VCC	5V
+GND	GND
+If you want to learn the RFID UID value, check out this file: uiddeger.ino.
